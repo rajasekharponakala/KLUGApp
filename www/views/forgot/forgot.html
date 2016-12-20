@@ -1,0 +1,24 @@
+<ion-view view-title="Forgot Password">
+  <ion-content class="tinted-image" style="background-size: 100% 100%; height:100%; padding: 15px; padding-top: 125px;">
+    <form name="forgotForm" novalidate class="tinted-image" style="background-size: 100% 100%; height:100%; padding: 15px; padding-top: 60px;" ng-submit="forgotForm.$valid && resetpassword(user)">
+   <div class="list">
+      <label class="item item-input item-floating-label" ng-class="{ 'has-error' : forgotForm.txtemail.$invalid && forgotForm.$submitted }" style="background-color: #fff; border-radius: 9px; margin-bottom: 35px;">
+        <span class="input-label">Email</span>
+        <input name="txtemail" ng-model="user.email" type="email"
+        ng-minlength="5"
+        ng-maxlength="30"
+        required>
+      </label>
+      <div class="form-errors" ng-messages="forgotForm.txtemail.$error" ng-if="forgotForm.$submitted">
+        <div class="form-error" ng-message="required">Email is required</div>
+        <div class="form-error" ng-message="email">Must be a valid email</div>
+        <div class="form-error" ng-message="minlength">Email must be at least 5 characters</div>
+        <div class="form-error" ng-message="maxlength">Email must be less than 30 characters</div>
+      </div>
+      <div class="padding-top">
+      <input type="submit" value="Reset my password" style="border-radius: 9px;" class="button button-block button-positive"/>
+      </div>
+  </form>
+    
+  </ion-content>
+</ion-view>

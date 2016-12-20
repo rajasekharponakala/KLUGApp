@@ -1,0 +1,37 @@
+Searching 20691 files for "com.jcjee.plugins.emailcomposer" (regex)
+
+/Users/suryakosaraju/KLUG/platforms/android/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin:
+    <binary>
+
+/Users/suryakosaraju/KLUG/platforms/android/.gradle/2.14.1/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin:
+    <binary>
+
+/Users/suryakosaraju/KLUG/platforms/android/.gradle/2.14.1/tasks/_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin:
+    <binary>
+
+/Users/suryakosaraju/KLUG/platforms/android/android.json:
+
+
+/Users/suryakosaraju/KLUG/platforms/android/assets/www/cordova_plugins.js:
+   
+
+/Users/suryakosaraju/KLUG/platforms/android/assets/www/plugins/com.jcjee.plugins.emailcomposer/www/EmailComposer.js:
+   
+/Users/suryakosaraju/KLUG/platforms/android/platform_www/cordova_plugins.js:
+
+/Users/suryakosaraju/KLUG/platforms/android/platform_www/plugins/com.jcjee.plugins.emailcomposer/www/EmailComposer.js:
+    1: cordova.define("com.jcjee.plugins.emailcomposer.EmailComposer", function(require, exports, module) {
+
+/Users/suryakosaraju/KLUG/platforms/android/res/xml/config.xml:
+    4:         <param name="android-package" value="com.jcjee.plugins.EmailComposer" />
+
+/Users/suryakosaraju/KLUG/platforms/android/src/com/jcjee/plugins/EmailAttachmentProvider.java:
+   18: 	public static final String AUTHORITY = "com.jcjee.plugins.emailcomposer.provider";
+
+/Users/suryakosaraju/KLUG/plugins/android.json:
+   10:         "com.jcjee.plugins.emailcomposer": {
+
+/Users/suryakosaraju/KLUG/plugins/fetch.json:
+   50:     "com.jcjee.plugins.emailcomposer": {
+
+411 matches across 12 files

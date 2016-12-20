@@ -1,0 +1,62 @@
+<ion-view style="background-color:#00AEDB;" cache-view="false" title="Create Account">
+  <ion-nav-buttons side="left">
+  <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+
+  <ion-content class="tinted-image" style="background-size: 100% 100%;height:100%; padding: 15px; padding-top:25px;">
+    <form  style=" width: 330px; margin: 0 auto;" name="registerForm" novalidate ng-submit="createUser()"
+    ng-class="{ 'has-error' : registerForm.txtemail.$invalid && registerForm.$submitted }">
+  <div class="list list-inset" style="background-color: transparent; border-radius:9px;">
+        <label class="item item-input" style="background-color: #fff;">
+        <input name="txtemail" type="email" ng-model="user.email" placeholder="Email (will be your User ID)"
+        ng-minlength="8"
+        ng-maxlength="50"
+        required>
+      </label>
+      <div class="form-errors" ng-messages="registerForm.txtemail.$error" style="color: red;" ng-if="registerForm.$submitted">
+        <div class="form-error" ng-message="required"></div>
+        <div class="form-error" ng-message="email"></div>
+        <div class="form-error" ng-message="maxlength"></div>
+      </div>
+        <label class="item item-input" ng-class="{ 'has-error-lr' : registerForm.txtpassword.$invalid  && registerForm.$submitted}" style="background-color: #fff;">
+        <input name="txtpassword" type="password" ng-model="user.password" placeholder="Password"
+        ng-minlength="8"
+        ng-maxlength="15"
+        required>
+      </label>
+      <div class="form-errors" ng-messages="registerForm.txtpassword.$error" style="color: #fff;" ng-if="registerForm.$submitted">
+        <div class="form-error" ng-message="required"></div>
+        <div class="form-error" ng-message="minlength"></div>
+        <div class="form-error" ng-message="maxlength"></div>
+        <div class="form-error" ng-message="pattern"></div>
+      </div>
+        <label class="item item-input" style="background-color: #fff; ">
+        <input name="txtfirstname" type="text" ng-model="user.fullname" placeholder="Full Name"
+        ng-minlength="3"
+        ng-maxlength="30",
+        required>
+      </label>
+      <div class="form-errors" ng-messages="registerForm.txtfirstname.$error" style="color: #fff;" ng-if="registerForm.$submitted">
+        <div class="form-error" ng-message="required"></div>
+        <div class="form-error" ng-message="minlength"></div>
+        <div class="form-error" ng-message="maxlength"></div>
+      </div>
+        <label class="item item-input" style="background-color: #fff;  margin-bottom: 15px;">
+        <input name="txtidno" type="tel" ng-model="user.idno" placeholder="ID Number"
+        ng-minlength="4"
+        ng-maxlength="10"
+        required>
+      </label>
+      <div class="form-errors" ng-messages="registerForm.txtidno.$error" style="color: #fff;" ng-if="registerForm.$submitted">
+        <div class="form-error" ng-message="required"></div>
+        <div class="form-error" ng-message="minlength"></div>
+        <div class="form-error" ng-message="maxlength"></div>
+        <div class="form-error" ng-message="pattern"></div>
+      </div>
+    </div>
+    <div style="padding-bottom: 15px;">
+      <input style="color:white; font-weight:bold" type="submit" class="button button-block button-calm" style="border-radius:9px;" value="Sign-Up">
+    </div>
+  </form>
+  </ion-content>
+</ion-view>

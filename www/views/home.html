@@ -1,0 +1,130 @@
+<body ng-app="starter" >
+<ion-view class="ion-balanced" title="Home">
+<ion-header-bar class="bar-energized">
+  <h1 class="title">Home</h1>
+</ion-header-bar>
+<ion-nav-buttons side="left">
+  <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+</ion-nav-buttons>
+<ion-pane>
+    <ion-tabs class="tabs-positive">
+      <ion-tab view-title="Memory Lane" icon-on="ion-images" icon-off="ion-images">
+        <ion-content >
+          <br>
+          <h4 style=" background-color:#41b7d8; font-family:Sans-Serif; font-size: 15pt;"><b>The road so far:</b></h4>
+          <ion-slide-box style="background-color:#00AEDB" ng-controller="ExampleController" pager-click="navSlide(index)" auto-play="true" does-continue="true">
+              <ion-slide>
+              <img style="width: 100%" src="img/gluglogo.png">
+            </ion-slide>
+              <ion-slide>
+              <img style="width: 100%" src="img/openaccess.gif">
+            </ion-slide>
+            <ion-slide>
+              <img style="width: 100%" src="img/pic1.png">
+              <h4>Aaron Day</h4>
+              Aaron Swartz was an American computer programmer, entrepreneur, writer. He was involved in the development RSS and the Markdown publishing format, Creative Commons,web.py, Reddit
+
+              He was a martyr who worked for Internet Freedom, Open Access at his of 20's.            </ion-slide>
+            <ion-slide>
+              <img style="width: 100%" src="img/balaswech.png">
+              <h4>Bala Swecha Event</h4>
+              Bringing awareness of latest technology to those who are unexposed to it.
+            </ion-slide>
+            <ion-slide>
+              <img style="width: 100%" src="img/pic5.png">
+              <b>Aaron Day</b>
+            </ion-slide>
+            <ion-slide>
+              <img style="width: 100%" src="img/some.png">
+              <h4>Swecha for Chennai</h4>
+              <p style=": italic">"One for all and All for one."</p><br>
+              After severe spells of rain flooded most of the the city and large parts of Chennai,
+              Swecha along with KLUG have raised funds to aid those who are in need of help during the floods.
+            </ion-slide>
+            <ion-slide>
+              <img style="width: 100%" src="img/class.png">
+            </ion-slide>
+            <ion-slide>
+              <img style="width: 100%" src="img/road1.png">
+              <h4>Swecha for Chennai</h4>
+            </ion-slide>
+            <ion-slide>
+              <img style="width: 100%" src="img/road2.png">
+              <h4>Swecha for Chennai</h4>
+
+            </ion-slide>
+            <ion-slide>
+            <img style="width: 100%" src="img/team.png">
+            <h4>The Whole Team</h4>
+            They say that team work is the key to a group's success.
+            </ion-slide>
+          </ion-slide-box>
+        </ion-content>
+      </ion-tab>
+
+      <ion-tab title="Events" icon-on="ion-calendar" icon-off="ion-calendar">Events
+        <ion-content  class="mymenu3" >
+          <ion-list>
+            <ion-item>
+             <h5 style="color: midnightblue; font-size: 15pt;  font-family: Prompt">Training on Open Source</h5><br>
+              November 30 - December 2&nbsp;
+              (in collaboration with Swecha)
+            </ion-item>
+            <ion-item onclick="window.open('https://www.facebook.com/events/1734063853583010/', '_system', 'location=yes'); return false;">
+              <h5 style="color: midnightblue; font-size: 15pt; font-family:Prompt">Aaron Swartz Day at KL University</h5><br>
+              November 8
+            </ion-item>
+            <ion-item onclick="window.open('https://www.facebook.com/events/297343527314492/', '_system', 'location=yes'); return false;">
+              <h5 style="color: midnightblue; font-size: 15pt; font-family:Prompt">Drupal - Web Development</h5><br>
+              September
+              20
+            </ion-item>
+            <ion-item onclick="window.open('https://www.facebook.com/events/1195663827121921/', '_system', 'location=yes'); return false;">
+              <h5 style="color: midnightblue; font-size: 15pt;font-family:Prompt">Introduction to Prompt Python</h5><br>
+              September 13
+            </ion-item>
+            <ion-item onclick="window.open('https://www.facebook.com/events/310847835929703/', '_system', 'location=yes'); return false;">
+              <h5 style="color: midnightblue; font-size: 15pt;font-family:Prompt">INSTALFEST</h5><br>
+              July
+              12
+            </ion-item>
+            <ion-item onclick="window.open('https://www.facebook.com/events/222843008074353/', '_system', 'location=yes'); return false;">
+              <h5 style="color: midnightblue; font-size: 15pt; font-family:Prompt">15 Day Intensive Industry Training Camp at Guntur</h5><br>
+              May
+              24 &nbsp;
+              (in collaboration with Swecha)
+            </ion-item>
+            <ion-item onclick="window.open('https://www.facebook.com/events/2036776329880821/', '_system', 'location=yes'); return false;">
+              <h5 style="color: midnightblue; font-size: 15pt;font-family:Prompt">Genuino/ Arduino Day 2016</h5><br>
+              April
+              2
+
+            </ion-item>
+            <ion-item onclick="window.open('https://www.facebook.com/events/482317158606191/', '_system', 'location=yes'); return false;">
+              <h5 style="color: midnightblue; font-size: 15pt;font-family:Prompt">Session on Web Designing</h5><br>
+              September
+              23
+
+            </ion-item>
+            <ion-item onclick="window.open('https://www.facebook.com/events/870456053009359/', '_system', 'location=yes'); return false;">
+              <h5 style="color: midnightblue; font-size: 15pt;font-family:Prompt">Intro to Python</h5><br>
+              September
+              15
+            </ion-item>
+            <ion-item onclick="window.open('https://www.facebook.com/events/792145417570663/', '_system', 'location=yes'); return false;">
+              <h5 style="color: midnightblue; font-size: 15pt;font-family:Prompt">Session on Version Control - GIT</h5><br>
+              July
+              29
+              </ion-item>
+            <ion-item onclick="window.open('https://www.facebook.com/events/410122232464249/', '_system', 'location=yes'); return false;" >
+              <h5 style="color: midnightblue; font-size: 15pt; font-family:Prompt">Summer Camp</h5><br>
+              May 21, 2014 - June 4, 2014
+            </ion-item>
+            <br><br>
+          </ion-list>
+        </ion-content>
+      </ion-tab>
+    </ion-tabs>
+	</ion-pane>
+</ion-view>
+</body>

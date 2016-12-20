@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+    <link data-require="ionic@1.0.0-beta.1" data-semver="1.0.0-beta.1" rel="stylesheet" href="http://code.ionicframework.com/1.0.0-beta.1/css/ionic.css">
+    <link rel="stylesheet" href="style.css">
+    <script data-require="ionic@1.0.0-beta.1" data-semver="1.0.0-beta.1" src="http://code.ionicframework.com/1.0.0-beta.1/js/ionic.bundle.js"></script>
+    <meta http-equiv="Content-Security-Policy" content="default-src *; script-src &apos;self&apos; &apos;unsafe-inline&apos; &apos;unsafe-eval&apos; *; style-src  &apos;self&apos; &apos;unsafe-inline&apos; *">
+    <allow-navigation href="*">
+    <!-- cordova script (this will be a 404 during development) -->
+      <script src="lib/ngCordova/dist/ng-cordova.min.js"></script>
+      <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+
+      <script src="lib/ngstorage/ngStorage.min.js"></script>
+      <script src="plugins/pushbots-cordova-plugin/www/pushbots.js"></script>
+    <script src="cordova.js"></script>
+
+
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/utils.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-database.js"></script>
+      <script src="https://cdn.firebase.com/libs/angularfire/2.1.0/angularfire.min.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDgbt0U3UehL_Jrt9nE0r8fy8UJ5zsGAq8",
+        authDomain: "klug-7bf71.firebaseapp.com",
+        databaseURL: "https://klug-7bf71.firebaseio.com",
+        storageBucket: "klug-7bf71.appspot.com",
+        messagingSenderId: "573096612337"
+      };
+      firebase.initializeApp(config);
+    </script>
+    </allow-navigation>
+  </head>
+
+  <body style="background-color:#00AEDB;" ng-app="KLUG">
+    <ion-nav-view></ion-nav-view>
+  </body>
+
+</html>

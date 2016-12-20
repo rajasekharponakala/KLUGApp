@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "573096612337",
+    "firebase_url": "https://klug-7bf71.firebaseio.com",
+    "project_id": "klug-7bf71",
+    "storage_bucket": "klug-7bf71.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:573096612337:android:eaed5843d37f1631",
+        "android_client_info": {
+          "package_name": "com.ionicframework.klug433838"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "573096612337-kven878b6ocbf43183bthtq4itiv95b4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCbFJWo2a_6rQcIxHhhyoaOJ2WbhmRMW4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
